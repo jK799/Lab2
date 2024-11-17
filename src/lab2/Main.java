@@ -7,9 +7,9 @@ public class Main {
         System.out.println("Obiekt Color (metoda toString()): " + color1);
 
         // Wypisanie poszczególnych składowych obiektu Color
-        System.out.println("Red: " + color1.red());
-        System.out.println("Green: " + color1.green());
-        System.out.println("Blue: " + color1.blue());
+        System.out.println("Red: " + color1.Red());
+        System.out.println("Green: " + color1.Green());
+        System.out.println("Blue: " + color1.Blue());
 
         // Tworzenie obiektu ColorRGBA z podaną wartością alpha
         ColorRGBA color2 = new ColorRGBA(50, 150, 200, 128);

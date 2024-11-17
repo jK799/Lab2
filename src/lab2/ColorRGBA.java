@@ -7,7 +7,7 @@ public record ColorRGBA(int red, int green, int blue, int alpha) {
         }
     }
 
-    public ColorRGBA(int red, int green, int blue, int alpha) {
-        this(red, green, blue, alpha);
+    public ColorRGBA(int red, int green, int blue) {
+        this(red, green, blue, 0);
     }
 }
