@@ -2,17 +2,33 @@ package lab2;
 
 public class Main {
     public static void main(String[] args) {
-        Color color1 = new Color(255, 0,0);
-        System.out.println(color1);
+        // Tworzenie obiektu Color
+        Color color1 = new Color(255, 100, 50);
+        System.out.println("Obiekt Color (metoda toString()): " + color1);
 
-        Color color2 = new Color(0,0,255);
-        System.out.println(color2);
+        // Wypisanie poszczególnych składowych obiektu Color
+        System.out.println("Red: " + color1.red());
+        System.out.println("Green: " + color1.green());
+        System.out.println("Blue: " + color1.blue());
 
-        Color color3 = new Color(0,255,0);
-        System.out.println(color3);
+        // Tworzenie obiektu ColorRGBA z podaną wartością alpha
+        ColorRGBA color2 = new ColorRGBA(50, 150, 200, 128);
+        System.out.println("\nObiekt ColorRGBA (metoda toString()): " + color2);
 
-        ColorRGBA colorRGBA = new ColorRGBA(255,255,255, 120);
-        System.out.println(colorRGBA);
+        // Wypisanie poszczególnych składowych obiektu ColorRGBA
+        System.out.println("Red: " + color2.red());
+        System.out.println("Green: " + color2.green());
+        System.out.println("Blue: " + color2.blue());
+        System.out.println("Alpha: " + color2.alpha());
+
+        // Tworzenie obiektu ColorRGBA z domyślną wartością alpha
+        ColorRGBA color3 = new ColorRGBA(0, 255, 0);
+        System.out.println("\nObiekt ColorRGBA z domyślnym alpha: " + color3);
+
+        // Wypisanie poszczególnych składowych obiektu ColorRGBA z domyślnym alpha
+        System.out.println("Red: " + color3.red());
+        System.out.println("Green: " + color3.green());
+        System.out.println("Blue: " + color3.blue());
+        System.out.println("Alpha: " + color3.alpha());
     }
-
 }
